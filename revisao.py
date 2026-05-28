@@ -1,11 +1,17 @@
+#Exercício 1 — Cadastro de nomes
+nomes = []
 
+for i in range(5):
+    nome=input("Digite seu nome: ")
+    nomes.append(nome)
+for i in range(5):
+    print(nomes[i])
 
-
-
-
-
-
-
+#Exercício 2 — Removendo elementos
+frutas = ["maçã", "banana", "uva", "laranja"] 
+frutas.remove("uva")
+frutas.append("morango")
+print(frutas)
 
 #ATIVIDADE 3
 
