@@ -1,17 +1,17 @@
-#Exercício 1 — Cadastro de nomes
-nomes = []
+# #Exercício 1 — Cadastro de nomes
+# nomes = []
 
-for i in range(5):
-    nome=input("Digite seu nome: ")
-    nomes.append(nome)
-for i in range(5):
-    print(nomes[i])
+# for i in range(5):
+#     nome=input("Digite seu nome: ")
+#     nomes.append(nome)
+# for i in range(5):
+#     print(nomes[i])
 
-#Exercício 2 — Removendo elementos
-frutas = ["maçã", "banana", "uva", "laranja"] 
-frutas.remove("uva")
-frutas.append("morango")
-print(frutas)
+# #Exercício 2 — Removendo elementos
+# frutas = ["maçã", "banana", "uva", "laranja"] 
+# frutas.remove("uva")
+# frutas.append("morango")
+# print(frutas)
 
 #ATIVIDADE 3
 
@@ -48,19 +48,19 @@ print(frutas)
 #ATIVIDADE 5
 
 # 1. Cria uma lista com 4 notas
-notas = []
-soma = 0
-for i in range(4):
-    nota = float(input('Digite sua nota: '))
-    notas.append(nota)
+# #notas = []
+# soma = 0
+# for i in range(4):
+#     nota = float(input('Digite sua nota: '))
+#     notas.append(nota)
 
-for nota in notas: 
-    soma = soma + nota 
-media = soma / len(notas)
+# for nota in notas: 
+#     soma = soma + nota 
+# media = soma / len(notas)
 
-if media >= 7:
-    print('Aprovado')
-else:
-    print('Reprovado')
+# if media >= 7:
+#     print('Aprovado')
+# else:
+#     print('Reprovado')
 
 
