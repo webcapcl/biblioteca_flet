@@ -35,27 +35,44 @@
 # carro1.acelerar()
 
 
-class Conta:
-    def __init__(self,titular,saldo):
-        self.titular = titular
-        self.saldo = saldo
+# class Conta:
+#     def __init__(self,titular,saldo):
+#         self.titular = titular
+#         self.saldo = saldo
 
-    def depositar(self, valor):
-        self.saldo += valor
-        print('Depósito Realizado')        
-    def mostrar_saldo(self):
-        print(f'Saldo Atual : {self.saldo}')    
+#     def depositar(self, valor):
+#         self.saldo += valor
+#         print('Depósito Realizado')        
+#     def mostrar_saldo(self):
+#         print(f'Saldo Atual : {self.saldo}')    
 
-    def sacar(self, valor):
-        self.saldo -= valor
-        print('Saque Realizado')
+#     def sacar(self, valor):
+#         self.saldo -= valor
+#         print('Saque Realizado')
 
-conta1 = Conta('Fulano', 1000)
-print(conta1.titular)
-conta1.depositar(500)
-conta1.depositar(500)
-conta1.sacar(300)
-conta1.mostrar_saldo()
+# conta1 = Conta('Fulano', 1000)
+# print(conta1.titular)
+# conta1.depositar(500)
+# conta1.depositar(500)
+# conta1.sacar(300)
+# conta1.mostrar_saldo()
+
+
+class Produto:
+    def __init__(self, nome,preco):
+        self.nome = nome
+        self.preco = preco
+    def exibir_dados(self):
+        print(f'Produto: {self.nome}')
+        print(f'valor R$: {self.preco}')
+produto1=Produto('Mouse Gamer', 150)
+produto1.exibir_dados()        
+
+
+
+              
+                  
+
 
 
 
