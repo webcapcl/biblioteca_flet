@@ -58,15 +58,53 @@
 # conta1.mostrar_saldo()
 
 
-class Produto:
-    def __init__(self, nome,preco):
+# class Produto:
+#     def __init__(self, nome,preco):
+#         self.nome = nome
+#         self.preco = preco
+#     def exibir_dados(self):
+#         print(f'Produto: {self.nome}')
+#         print(f'valor R$: {self.preco}')
+# produto1=Produto('Mouse Gamer', 150)
+# produto1.exibir_dados()        
+
+# class Aluno:
+#     def __init__(self,nome,nota1,nota2):
+#         self.nome=nome
+#         self.nota1=nota1
+#         self.nota2=nota2
+
+class Aluno:
+    def __init__(self, nome, nota1, nota2):
         self.nome = nome
-        self.preco = preco
-    def exibir_dados(self):
-        print(f'Produto: {self.nome}')
-        print(f'valor R$: {self.preco}')
-produto1=Produto('Mouse Gamer', 150)
-produto1.exibir_dados()        
+        self.nota1 = nota1
+        self.nota2 = nota2
+
+    def calcular_media(self):
+        return (self.nota1 + self.nota2) / 2
+
+    def verificar_situacao(self):
+        media = self.calcular_media()
+        if media >= 7:
+            return "Aprovado"
+        else:
+            return "Reprovado"
+
+# --- Testando o Sistema ---
+
+# Criando o objeto com os dados fornecidos
+aluno1 = Aluno(nome="Carlos", nota1=8, nota2=6)
+
+# Calculando a média e verificando a situação
+media_final = aluno1.calcular_media()
+situacao_final = aluno1.verificar_situacao()
+
+# Exibindo os resultados
+print(f"Aluno: {aluno1.nome}")
+print(f"Média: {media_final:.1f}")
+print(f"Situação: {situacao_final}")
+
+
 
 
 
